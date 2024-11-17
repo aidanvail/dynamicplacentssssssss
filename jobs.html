@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse and apply for the latest job opportunities at Placement Dynamics">
+    <title>Job Listings | Placement Dynamics</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/jobs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="jobs.html" class="active">Jobs</a></li>
+                <li><a href="create-cv.html">Create CV</a></li>
+                <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="jobs-hero">
+            <div class="container">
+                <h1>Find Your Next Career Move</h1>
+                <p>Browse through our curated list of opportunities</p>
+                <div class="search-container">
+                    <div class="search-box">
+                        <div class="search-input">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="jobSearch" placeholder="Job title or keyword">
+                        </div>
+                        <div class="search-input">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" id="locationSearch" placeholder="Location">
+                        </div>
+                        <button class="btn btn-primary">Search Jobs</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jobs Section -->
+        <section class="jobs-section">
+            <div class="container">
+                <div class="jobs-layout">
+                    <!-- Filters Sidebar -->
+                    <aside class="filters-sidebar">
+                        <h3>Refine Search</h3>
+                        
+                        <div class="filter-group">
+                            <h4>Job Type</h4>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="full-time">
+                                    <span>Full Time</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="part-time">
+                                    <span>Part Time</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="contract">
+                                    <span>Contract</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Experience Level</h4>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="entry">
+                                    <span>Entry Level</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="mid">
+                                    <span>Mid Level</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="senior">
+                                    <span>Senior Level</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Industry</h4>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="technology">
+                                    <span>Technology</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="finance">
+                                    <span>Finance</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="healthcare">
+                                    <span>Healthcare</span>
+                                </label>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Jobs List -->
+                    <div class="jobs-content">
+                        <div class="jobs-header">
+                            <h2>Available Positions</h2>
+                            <div class="jobs-count">
+                                <span id="jobCount">0</span> positions found
+                            </div>
+                        </div>
+                        
+                        <div class="jobs-grid" id="jobsContainer">
+                            <!-- Jobs will be populated via Netlify CMS -->
+                            <div class="loading-message">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <p>Loading available positions...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="https://i.imgur.com/ORDJyTe.png" alt="Placement Dynamics Logo" class="footer-logo">
+                    <p>Connecting the right talent with the right opportunities</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="clients.html">For Employers</a></li>
+                        <li><a href="create-cv.html">Create CV</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@placementdynamics.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Placement Dynamics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jobs.js"></script>
+</body>
+</html> 

@@ -1,0 +1,377 @@
+/* Client Page Specific Styles */
+
+/* Hero Section */
+.client-hero {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    text-align: center;
+}
+
+.client-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.client-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+/* Service Overview */
+.service-overview {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.service-content {
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-out;
+}
+
+.lead {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+/* Terms Section */
+.terms-section {
+    padding: 4rem 0;
+    background: var(--light-gray);
+}
+
+.terms-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.terms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.terms-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    animation: slideUp 0.8s ease-out;
+}
+
+.terms-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.terms-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.terms-card i {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.terms-card ul {
+    list-style: none;
+}
+
+.terms-card ul li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.terms-card ul li::before {
+    content: '•';
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Contact Form Section */
+.client-contact {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-out;
+}
+
+.contact-info {
+    padding: 2rem;
+}
+
+.contact-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact-features {
+    margin-top: 2rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.feature i {
+    color: var(--accent-color);
+}
+
+/* Form Styles */
+.client-form {
+    background: var(--light-gray);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(87, 108, 188, 0.1);
+    outline: none;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .terms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .terms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .client-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Add these styles to your existing clients.css */
+
+.client-forms {
+    padding: 4rem 0;
+    background: var(--light-gray);
+}
+
+.client-forms h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+}
+
+.forms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.form-card {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.form-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.form-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.form-card p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.form-card .btn {
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .forms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .forms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* Add these styles for the service image */
+.service-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.service-image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: var(--transition);
+}
+
+.service-image:hover .feature-image {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .service-header {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+} 
